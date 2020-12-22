@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,600&family=Metal+Mania&family=Open+Sans:wght@600&family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lily Script One', cursive;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    margin: 30px 0;
+}
+
+h1{
+    font-family: 'Metal Mania', cursive;
+}
+
+.First_header a,.our_service a{
+    font-family: 'Lily Script One', cursive;
+}
+
+.title_main{
+    font-family: 'Metal Mania', cursive;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+footer{
+    height: 3rem;
+    line-height: 3rem;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+
+/* Hindi Page Css */
+
+.JibanParichyaImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+@media only screen and (max-width : 998px){
+    .First_header .work_image img{
+        margin: 20px 0px;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px){
+.title_main{
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+.First_header .work_image img{
+    margin: 20px 0px;
+}
+}
+
+@media only screen and (max-width: 576px){
+
+    .First_header .work_content{
+        font-size: 0.73rem;
+    }
+
+    .First_header .row,.All_contents_holder,.workSEction,.our_service .row,.jivan_parichya_row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .workSEction .img_container{
+        margin: 10px 0;
+    }
+    
+    .All_contents_holder{
+        overflow: hidden;
+    }
+
+}
+
+@media only screen and (max-width : 500px){
+    footer p{
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width : 350px){
+    footer p{
+        font-size: 0.5rem;
+        line-height: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+
+
