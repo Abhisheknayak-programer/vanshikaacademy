@@ -132,9 +132,19 @@ footer p{
 
 
 
+/* Developers Section Styling */
+
+.Dev_Img_holder img{
+    border-radius: 50%;
+}
 
 
 
+.dev-section .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -176,7 +186,7 @@ footer p{
         font-size: 0.73rem;
     }
 
-    .First_header .row,.All_contents_holder,.workSEction,.our_service .row,.jivan_parichya_row,.udemy .row,.Physics .row{
+    .First_header .row,.All_contents_holder,.workSEction,.our_service .row,.jivan_parichya_row,.udemy .row,.Physics .row,.myRow,.Dev_Img_holder{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -201,12 +211,24 @@ footer p{
         font-size: 1rem;
     }
 
+    .My_list li{
+        font-size: 0.8rem;
+    }
     .udemy p,.Physics_content p{
         font-size: 0.7rem;
         margin-top: 20px;
     }
+    .Physics_content h4{
+        text-align: center;
+    }
     .MyBtn_Here{
         width: 50%;
+    }
+
+
+    .profile_img{
+        width: 50%;
+        height: 50%;
     }
 
 }
