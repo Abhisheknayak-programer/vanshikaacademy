@@ -26,7 +26,7 @@ $(document).ready(function () {
                 margin : 5,
             },
             1000 : {
-                items : 2,
+                items : 3,
                 nav : false,
                 // stagePadding: 50, // It will Show The Cut Out Part From The Both The Sides Of The Carousel
             },
