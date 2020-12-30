@@ -19,6 +19,7 @@ $(document).ready(function () {
                 items:1,
                 nav : false,
                 margin : 0,
+                dots:false
             },
             600 : {
                 items : 3,
