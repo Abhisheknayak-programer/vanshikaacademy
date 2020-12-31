@@ -44,12 +44,12 @@ footer p{
 
 
 /* Hindi Page Css */
-
+/* 
 .JibanParichyaImg{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 
@@ -169,6 +169,13 @@ footer p{
         align-items: center;
         flex-direction: column;
     }
+    
+    .JibanParichyaImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 
