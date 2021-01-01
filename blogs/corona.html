@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vanshika Ki Pathshala</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.green.css">
+
+    <!-- Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!-- J-query File Path -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Owl Javascript -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    strong{
+        color: crimson;
+    }
+
+    @media only screen and (max-width:576px) {
+        .covidFirstRow,.covidSecondRow,.covidThirdRow,.covidFourthRow {
+            display: flex;
+            flex-direction: column;
+        }
+        .covidFirstRow .col,.covidSecondRow .col,.covidThirdRow .col,.covidFourthRow .col {
+            margin: 15px 0px;
+        }
+
+    }
+
+
+
+
+
+
+    /* Scroll Bar Css */
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #scrollPath {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    #progressBar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        animation: animationMyScroll 3s linear infinite;
+    }
+
+
+    @keyframes animationMyScroll {
+
+        0%,
+        100% {
+            filter: hue-rotate(0deg);
+        }
+
+        50% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+
+    #progressBar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+
+
+    #progressBar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(30px);
+    }
+</style>
+
+<body>
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+
+
+
+
+
+
+    <!-- NavBar Area -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Ki Pathshala</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars" class="navbar-toggler-icon" style="color: #fff;" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./blogs/corona.html">Corona Virus ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                            <li><a class="dropdown-item" href="#">OtherTopic ⏩</a></li>
+                        </ul>
+
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./hindi.html">Hindi</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.ecenglish.com/en/101-ways-to-learn-english">English</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./science.html">Science</a></li>
+                            <li><a class="dropdown-item" href="./commerce1.html">Commerce</a></li>
+                            <li><a class="dropdown-item" href="https://techdaytodays.blogspot.com/">Technology</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <!-- <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Ki Pathshala</a> -->
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" style="color: #fff;" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+
+
+    <!-- Covid Area Starts -->
+
+    <div class="covidHolder">
+        <h1 class="wow flip" style="text-align: center; text-decoration: underline; color: red;">Covid-19</h1>
+        <div class="container">
+           
+            <div class="row covidFirstRow">
+                <div class="col col-lg-8 col-sm-12 col-md-12 CoronaFirstPara">
+                    <p style="text-align: justify;">Covid-19 disease is a pestilential disease. It is caused by newly
+                        discover lethal corona virus
+                        which can transmit from person to person. This virus affects your upper respiratory tract
+                        (sinuses, nose and throat) or lower respiratory tract (windpipe and lungs).
+                        There are several types of corona viruses except SARS-Cov-2 other corona viruses cause most of
+                        the colds that affect us during the year, but they are not a serious danger otherwise healthy
+                        person.
+                        SARS-Cov-2 one of type of corona viruses which cause severe diseases like Middle East
+                        Respiratory Syndrome (MERS) and Sudden Acute Respiratory Syndrome (SARS).
+                    </p>
+                </div>
+                <div class="col col-lg-4 col-sm-12 col-md-12 CoronaFirstImg">
+                    <img src="../images/ClientImg/covid2.jpg" class="img-fluid wow zoomInDown" alt="">
+                </div>
+            </div>
+
+
+            <div class="row covidSecondRow">
+                <h1 class="wow zoomInLeft" style="text-align: center; text-decoration: underline; color: red;">Origin</h1>
+
+                <div class="col col-lg-4 col-sm-12 col-md-12 CoronaSecondImg">
+                    <img src="../images/ClientImg/covid3 (1).svg" class="img-fluid wow zoomInDown" alt="">
+                </div>
+                <div class="col col-lg-8 col-sm-12 col-md-12 CoronaFirstPara">
+                    <p style="text-align: justify;">Covid-19 is a highly transmittable and pathogenic viral infection.
+                        Its first case found in wuhan town of china in December 2019. By genomic analysis it is revealed
+                        that SARS-Cov-2 is like SARS virus which is known as bat viruses that by bat could be the
+                        primary reservoir. But exact origin of this virus still a mystery for us.
+                    </p>
+                </div>
+            </div>
+
+
+            <br>
+
+
+            <div class="row covidThirdRow">
+                <h1 class="wow zoomInRight" style="text-align: center; text-decoration: underline; color: red;">SYMPTOMS OF
+                    COVID-19</h1>
+                <div class="col col-lg-8 col-sm-12 col-md-12 CoronaThirdPara">
+                    <p style="text-align: justify;">A healthy person is not much at risk from covid-19. It is more
+                        dangerous for old and sick people symptoms starts appearing within five to fourteen days after
+                        infected by covid-19.</p><br>
+                    <p>Some of the following symptoms appear in body infected by covid-19:</p><br>
+                    <strong>MOST COMMON SYMPTOMS</strong>
+                    <ul>
+                        <li>Fever</li>
+                        <li>Dry Cough</li>
+                        <li>Tiredness</li>
+                    </ul>
+
+                    <strong>SERIOUS SYMPTOMS</strong>
+                    <ul>
+                        <li>Difficulty in breathing or shortness in breathing </li>
+                        <li>Chest pain </li>
+                        <li>Having trouble in speaking and movement </li>
+                    </ul>
+
+                    <strong>LESS COMMON SYMPTOMS</strong>
+                    <ul>
+                        <li>Aches and sore throat</li>
+                        <li>Diarrhea</li>
+                        <li>Headache and loss of taste</li>
+                    </ul>
+
+                    <p>⭐ Covid-19 affects different people in diverse way. Most infected people develop mild to moderate illness and recover without hospitalization</p>
+                </div>
+                <div class="col col-lg-4 col-sm-12 col-md-12 CoronaThirdImg">
+                    <img src="../images/ClientImg/covid3 (2).svg" class="img-fluid wow zoomInDown" alt="">
+                </div>
+            </div>
+
+
+
+
+
+
+            <br>
+
+            <div class="row covidFourthRow">
+                <h1 class="wow zoomInLeft" style="text-align: center; text-decoration: underline; color: red;">Precautions</h1>
+
+                <div class="col col-lg-4 col-sm-12 col-md-12 CoronaFourthImg">
+                    <img src="../images/ClientImg/covid1.jpg" class="img-fluid wow zoomInDown" alt="">
+                </div>
+                <div class="col col-lg-8 col-sm-12 col-md-12 CoronaFourthPara">
+                    <p style="text-align: justify;">As the vaccine of covid-19 has not yet been fully discovered therefore it is our duty to protect ourselves from covid-19</p>
+                    <ul>
+                        <li>Create  a social distancing at crowded places.</li>
+                        <li>Keep your hands sanitized.</li>
+                        <li>Do not touch doors and railing at crowded places.</li>
+                        <li>Do not touch your eyes ,nose or mouth.</li>
+                        <li>Get out of the houses only when there is some important work.</li>
+                        <li>If you have a fever and difficulty in breathing, seek medical attention.</li>
+                        <li>Quarantine yourself if you see symptoms of covid—19.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer Design Starts -->
+
+
+  <footer class="bg-dark" style="color: #fff;">
+    <p>Copyright &copy; Vanshika Ki Pathshala 2020 | All Right Reserved !</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- My Javascripts -->
+    <script src="../js/script.js"></script>
+
+    <!-- Scroll Css -->
+    <script>
+
+        let progress = document.getElementById('progressBar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+
+    <!-- Wow Js  -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
