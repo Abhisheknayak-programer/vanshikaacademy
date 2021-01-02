@@ -105,3 +105,44 @@ $(document).ready(function () {
         }
     })
 });
+
+
+
+
+
+
+
+// Ram Carousel
+
+$(document).ready(function () {
+    $('#Ram .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        dots : false,
+        autoplay : 5000,
+        autoplayTimeout : 2000,
+        // // This Is For The Animation Only Occurs For Single Data
+        animateOut: 'slideOutDown',
+        animateIn: 'zoomInDown',
+        rtl : true, // It Will Make The Carousel Slide from Right To left In reverse Order
+        // stagePadding : 100,
+
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+});
+
+
+
+
+
+
