@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vanshika Ki Pathshala</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.green.css">
+
+    <!-- Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!-- J-query File Path -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Owl Javascript -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+</head>
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    strong{
+        color: crimson;
+    }
+
+
+
+
+
+
+
+    /* Scroll Bar Css */
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #scrollPath {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    #progressBar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        animation: animationMyScroll 3s linear infinite;
+    }
+
+
+    @keyframes animationMyScroll {
+
+        0%,
+        100% {
+            filter: hue-rotate(0deg);
+        }
+
+        50% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+
+    #progressBar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+
+
+    #progressBar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(30px);
+    }
+</style>
+
+<body>
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+
+
+    <!-- NavBar Area -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Ki Pathshala</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars" class="navbar-toggler-icon" style="color: #fff;" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+<!-- 
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="#">Hindi Blogs</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../hindi.html">Hindi</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.ecenglish.com/en/101-ways-to-learn-english">English</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../science.html">Science</a></li>
+                            <li><a class="dropdown-item" href="../commerce1.html">Commerce</a></li>
+                            <li><a class="dropdown-item" href="https://techdaytodays.blogspot.com/">Technology</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Essay
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../essay holder/jobless.html">Jobless</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/atkbd.html">Criminals</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/game.html">Game</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/newInvention.html">Scientific Invention</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="../hindi.html">Ryhme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="../jibanParichya.html">Jivan Parichya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="color: #fff;"
+                            href="../application.html">Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="color: #fff;"
+                            href="../essay.html">Essay</a>
+                    </li>
+
+                </ul>
+
+                <!-- <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Ki Pathshala</a> -->
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" style="color: #fff;" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div id="jobcarousel">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Unemployment/topic-1-img1.jpg" alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Unemployment/topic-1-img2.jpg" alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Unemployment/topic-1-img3.jpg" alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Unemployment/topic-1-img4.jpg" alt="No_Img"></div>
+        </div>
+    </div>
+
+
+
+<br>
+<br>
+
+
+    <!-- Job Less Area Starts -->
+
+    <h1 style="text-align: center;">बेरोजगारी की समस्या </h1>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-12 col-sm-12 col-md-12 JobParaHolder">
+                <p style="text-align: justify;"><strong>बेरोजगारी का हो नाश , तभी हो देश का विकास ।</strong>  <br>
+                    रूपरेखा- ( 1 ) प्रस्तावना , ( 2 ) बेरोजगारी के प्रमुख कारण , ( 3 ) बेरोजगारी के प्रकार , ( 4 ) बेरोजगारी के परिणाम , ( 5 ) समाधान हेतु सुझाव ।<br>
+                     <br>( 1.) प्रस्तावना - आज देश के कर्णधार मनीषी तथा समाज सुधारक न जाने कितनी समस्याओं की चर्चा करते हैं , परन्तु सारी समस्याओं की जननी बेरोजगारी है । इसी से भ्रष्टाचार , अनुशासनहीनता , चोरी , डकैती तथा अनैतिकता का विस्तार होता है । बेकारों का जीवन अभिशाप की लपटों से घिरा है । यह समस्या अन्य समस्याओं को भी जन्म दे रही है । चारित्रिक पतन , सामाजिक अपराध , मानसिक शिथिलता , शारीरिक क्षीणता आदि दोष बेकारी के ही परिणाम हैं । बेरोजगारी के कारण - बेरोजगारी के विभिन्न कारणों में से प्रमुख इस प्रकार हैं ( 1 ) जनसंख्या वृद्धि - निरन्तर जनसंख्या वृद्धि के कारण बेरोजगारी बढ़ते जा रही है । 
+                     <br><br>( 2 ) लघु एवं कुटीर उद्योग - धन्धों का अभाव - ब्रिटिश सरकार की नीति के कारण देश के लघु एवं कुटीर उद्योगों में समुचित प्रगति नहीं हुई है । काफी उद्योग धन्धे बन्द हो गये हैं । लघु उद्योगों को उपेक्षा रही । सामान्य हिन्दी (म.प्र . ) |
+                     <br><br>( 3 ) औद्योगीकरण का अभाव - स्वतंत्रता प्राप्ति के पश्चात् देश में बड़े उद्योगों का विकास हुआ परन्तु दोषपूर्ण शिक्षा प्रणाली - लिपिक बनाने वाली भारतीय शिक्षा प्रणाली में शारीरिक श्रम का कोई महत्व नहीं है । शिक्षित वर्ग के प्रति मन में शारीरिक श्रम के प्रति घृणा उत्पन्न होने में बेकारी में वृद्धि होती है ।
+                     <br><br>( 4) पूँजी का अभाव- देश में पूंजी का अभाव है इसलिए उत्पादन में वृद्धि न होने से भी बेकारी बढ़ रही है ।
+                     <br><br>( 5 ) कुशल एवं प्रशिक्षित श्रमिकों का अभाव - शिक्षा विद्यालयों एवं कारखानों की कमी के कारण देश में कुशल एवं प्रशिक्षित श्रमिकों का अभाव है । 
+                    </p>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col col-lg-12 col-sm-12 col-md-12 JobParaHolder">
+                <p style="text-align: justify;"><strong>बेरोजगारी के प्रकार-</strong> <br>
+                             <br>(1) ग्रामीण बेरोजगारी , ( 2 ) शिक्षित वर्ग । ( 1 ) इस श्रेणी में अशिक्षित एवं निर्धन कृषक और ग्रामीण मजदूर आते हैं । जो प्राय : वर्ष में 5 माह से लेकर 9 माह तक बेकार रहते हैं ।
+                        <br><br>( 2 ) शिक्षा प्राप्त करके बड़ी - बड़ी उपाधियों को लेकर अनेक सरस्वती के वरद पुत्र और पुत्रियों बेकार दृष्टिगोचर होते हैं इसे देश का दुर्भाग्य ही कहा जा सकता है । बेरोजगारी के परिणाम - भारत में ग्रामीण तथा नगरीय स्तर पर बढ़ती हुई बेरोजगारी को समस्या से देश में शान्ति - व्यवस्था आदि को भयंकर खतरा उत्पन्न हो गया है उसे रोकने के लिए यदि समायोजित कदम नहीं उठाया गया तो भारी उथल - पुथल का भय है । समस्या के समाधान हेतु सुझाव 
+                        <br><br>( 3 ) जनसंख्या पर नियंत्रण - जनसंख्या की वृद्धि को रोकने के लिए पंचवर्षीय योजनाओं में परिवार . कल्याण को अधिक - से - अधिक प्रभावशाली बनाया जाये । 
+                        <br><br>( 4 ) लघु एवं कुटीर उद्योग का विकास - उद्योगों के केन्द्रीयकरण को प्रोत्साहन देकर गाँवों में कुटीर उद्योग धन्धों का विकास करना चाहिए । कम पूँजी से लगने वाले ये उद्योग ग्रामों तथा नगरों में रोजगार ५ ।। इन उद्योगों का बड़े उद्योगों में तालमेल करना आवश्यक है । 
+                        <br><br>( 5 ) बचत एवं विनियोग की दर में वृद्धि - बचत को बढ़ावा देकर बेरोजगारी को नियंत्रित किया जा सकता है । बेकारी समाप्त हो जाये तो चारों ओर प्रसन्नता की लहर दौड़ जायेगी । " रोजगार सबको मिले , कोई न हो बेकार । घर - घर दीपक जल उठे , महक उठे संसार ।। "
+
+
+                   </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Footer Design Starts -->
+
+
+    <footer class="bg-dark" style="color: #fff;">
+        <p>Copyright &copy; Vanshika Ki Pathshala 2020 | All Right Reserved !</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scroll Css -->
+    <script>
+
+        let progress = document.getElementById('progressBar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+
+
+
+
+    <!-- My Javascripts -->
+    <script src="../js/script.js"></script>
+    <!-- Wow Js  -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vanshika Ki Pathshala</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.green.css">
+
+    <!-- Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!-- J-query File Path -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Owl Javascript -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    strong {
+        color: crimson;
+    }
+
+
+
+
+
+
+
+    /* Scroll Bar Css */
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #scrollPath {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    #progressBar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        animation: animationMyScroll 3s linear infinite;
+    }
+
+
+    @keyframes animationMyScroll {
+
+        0%,
+        100% {
+            filter: hue-rotate(0deg);
+        }
+
+        50% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+
+    #progressBar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+
+
+    #progressBar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(30px);
+    }
+</style>
+
+<body>
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+
+
+
+    <!-- NavBar Area -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Ki Pathshala</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars" class="navbar-toggler-icon" style="color: #fff;" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <!-- 
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="#">Hindi Blogs</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../hindi.html">Hindi</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.ecenglish.com/en/101-ways-to-learn-english">English</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../science.html">Science</a></li>
+                            <li><a class="dropdown-item" href="../commerce1.html">Commerce</a></li>
+                            <li><a class="dropdown-item" href="https://techdaytodays.blogspot.com/">Technology</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Essay
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../essay holder/jobless.html">Jobless</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/atkbd.html">Criminals</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/game.html">Game</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/newInvention.html">Scientific Invention</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="../hindi.html">Ryhme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="../jibanParichya.html">Jivan Parichya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="color: #fff;"
+                            href="../application.html">Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="color: #fff;"
+                            href="../essay.html">Essay</a>
+                    </li>
+
+                </ul>
+
+                <!-- <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Ki Pathshala</a> -->
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" style="color: #fff;" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div id="jobcarousel">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Playing Games/topic-3-img1.jpg"
+                    alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Playing Games/topic-3-img2.jpg"
+                    alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Playing Games/topic-3-img3.jpg"
+                    alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Playing Games/topic-3-img4.jpg"
+                    alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Playing Games/topic-3-img5.jpg"
+                    alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Playing Games/topic-3-img6.jpg"
+                    alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Playing Games/topic-3-img7.jpg"
+                    alt="No_Img"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <br>
+    <br>
+
+
+    <!-- Job Less Area Starts -->
+
+    <h1 style="text-align: center;">जीवन में खेलों का महत्व</h1>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-12 col-sm-12 col-md-12 JobParaHolder">
+                <p style="text-align: justify;"><strong> रूपरेखा</strong> <br>
+                    ( 1 ) प्रस्तावना , ( 2 ) खेलों के प्रकार , ( 3 ) खला का महत्त्व ( 4 ) भारत में खलो का दशा , ( 5 )
+                    उपसंहार ।
+
+                    <br><br>( 1 ) प्रस्तावना - मनुष्य हमेशा से खेल - प्रिय रहा है । खेल सबको प्रिय है । बच्चे , जवान , बूढ़े सभी
+                    अपनी रुचि के अनुसार खेल खेलते हैं । यह बात दूसरी है कि पढ़ाई के समय बच्चों को खेलते देखकर माता पिता
+                    उन्हें डॉ e देते हैं या रोक देते हैं . किन्तु इसका मतलब यह नहीं है कि खेल बुरी चीज है या खेल उन्हें
+                    प्रिय नहीं । खेलों के प्रकार - खेल कई प्रकार के होते हैं । मुख्य रूप से खेल दो प्रकार के होते हैं -
+                    घर के भीतर खेले जाने वाले खेल तथा मैदानी खेल । प्रथम प्रकार के खेलों को अंग्रेजी में इनडोर गेम्स
+                    (indoor games)कहते हैं और दूसरे प्रकार के खेलों को आउटडोर गेम्स ( Outdoor games ) कहते हैं । इनडोर
+                    गेम्स के अन्तर्गत टेबल टेनिस , बैडमिंटन , कैरम बोर्ड , शतरंज , टेनिस , वॉलीबाल , मुक्केबाजी ,
+                    जिमनास्टिक आदि खेल गिने जाते हैं तथा मैदानी खेल के अन्तर्गत फुटबाल , हॉकी , क्रिकेट , बेसबाल ,
+                    बास्केटबाल , कबड्डी तथा विभिन्न दौड़ें आदि खेलों की गिनती होती है । खेलों का महत्व - खेल जीवन का
+                    अनिवार्य अंग है । यह स्वास्थ्य के लिये लाभकारी है । इससे हमारा स्वस्थ एवं सस्ता मनोरंजन होता है ।
+                    खेल हमें भाई - चारा सिखाता है , अनुशासनप्रिय बनाता है तथा नेतृत्व को क्षमता प्रदान करता है । यह शरीर
+                    को सुन्दर , स्वस्थ व तरोताजा बनाता है तथा स्वस्थ शरीर में ही अच्छी बुद्धि निवास करती है । स्वास्थ्य
+                    उत्तम रहने पर काम करने में भी मन लगता है । कहा भी गया है ' शरीरमाद्यम् खलु धर्मसाधनम् अर्थात् सभी
+                    प्रकार के कार्यों को सिद्ध करने के लिए शरीर सबसे पहला साधन है । खेलों के द्वारा लोगों से मैत्री
+                    बढ़ती है और दूर - दूर के देशों को देखने का अवसर मिलता है । नामी खिलाड़ी बनने पर धन भी खूब मिलता है ।
+                    नौकरी भी आसानी से मिल जाती है । खेल राष्ट्रीय सम्मान और अन्तर्राष्ट्रीय प्रतिष्ठा का साधन है । भारत
+                    में खेलों की दशा - भारत में खेलों की दशा अत्यन्त दयनीय है । खेल के साधन अत्यन्त सीमित हैं । बहुत -
+                    से विद्यालयों और महाविद्यालयों में खेलों के सारे साधन तो कौन कहे , खेल के मैदान भी नहीं हैं । बच्चे
+                    गली - कूचों में खेलते रहते हैं । यही कारण है कि इतनी बड़ी जनसंख्या वाला देश होकर भी भारत
+                    अन्तर्राष्ट्रीय खेल प्रतियोगिताओं में पिछड़ जाता है । यहाँ के बच्चों को गिल्ली - डण्डे तथा कबड्डी
+                    जैसे खेल ही सुलभ हो पाते हैं । हॉकी का सिरमौर भारत , आज इस खेल में भी भाई - भतीजावाद एवं गुटबाजी के
+                    कारण पिछड़ता जा रहा है । उपसंहार - खुशी की बात यह है कि देर - सबेर हमारी सरकार की आँखें खुल चुकी हैं
+                    । वह खेल के राष्ट्रीय महत्व को समझने लगी है । ' एशियाड 82 खेल का आयोजन इस बात का प्रमाण है कि हमारी
+                    सरकार खेल और खिलाड़ियों पर विशेष ध्यान देने लगी है । भारत सरकार के अन्तर्गत एक खेल मन्त्रालय स्थापित
+                    किया गया है।
+                </p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+    <!-- Footer Design Starts -->
+
+
+    <footer class="bg-dark" style="color: #fff;">
+        <p>Copyright &copy; Vanshika Ki Pathshala 2020 | All Right Reserved !</p>
+    </footer>
+
+
+
+
+
+    <!-- Scroll Css -->
+    <script>
+
+        let progress = document.getElementById('progressBar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- My Javascripts -->
+    <script src="../js/script.js"></script>
+    <!-- Wow Js  -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

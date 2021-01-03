@@ -30,9 +30,89 @@
     <script src="./js/owl.carousel.min.js"></script>
 
 </head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    strong {
+        color: crimson;
+    }
+
+    .Application_Img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+    /* Scroll Bar Css */
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #scrollPath {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    #progressBar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        animation: animationMyScroll 3s linear infinite;
+    }
+
+
+    @keyframes animationMyScroll {
+
+        0%,
+        100% {
+            filter: hue-rotate(0deg);
+        }
+
+        50% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+
+    #progressBar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+
+
+    #progressBar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(30px);
+    }
+</style>
 
 <body>
 
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
 
 
 
@@ -49,7 +129,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-<!-- 
+                    <!-- 
                     <li class="nav-item">
                         <a class="nav-link" style="color: #fff;" href="#">Hindi Blogs</a>
                     </li> -->
@@ -100,6 +180,103 @@
 
 
 
+    <br>
+
+    <h1 style="text-align: center;">HINDI APPLICATION</h1>
+
+
+    <div class="container">
+        <div class="row Application_Img">
+            <div class="col col-lg-4 col-md-4 col-sm-6">
+                <img src="./images/Hinid Images/APPLICATION/img1.jpg" class="img-fluid" alt="No_img">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<br>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-12 col-md-12 col-lg-12">
+                <strong>
+                    <h5 style="text-align: justify;">थाना प्रभारी को ध्वनि - प्रदूषण रोकने के लिये एक पत्र लिखिये ।
+                        उत्तर प्रति , थाना प्रभारी , भोपाल ( म.प्र . ) विषय - ध्वनि प्रदूषण रोकने के सम्बन्ध में ।</h5>
+                </strong>
+
+                <p style="text-align: justify;"> महोदय ,<br>
+                    निवेदन है कि माध्यमिक शिक्षा मंडल की परीक्षाओं का समय निकट है । हम छात्र अपने अध्ययन में व्यस्त हैं
+                    । परन्तु जगह - जगह लाउडस्पीकरों की आवाज से हमारे अध्ययन में व्यवधान पड़ता है । इसके पूर्व
+                    महाविद्यालयों के छात्रों ने आपको एक प्रार्थना पत्र इस सम्बन्ध में दिया है । धार्मिक कार्यक्रमों ,
+                    सभा और दुकानों में निर्बाध रूप से लाउडस्पीकर बजाये जा रहे हैं । इससे ध्वनि प्रदूषण होता है और हम
+                    एकाग्रचित्त होकर अध्ययन नहीं कर सकते । अतः नगर के हजारों छात्रों के भविष्य को ध्यान में रखते हुए
+                    ध्वनि विस्तारक यंत्रों का परीक्षा अवधि में प्रयोग प्रतिबन्ध लगाने सम्बन्धी आदेश जारी करें । धन्यवाद
+                    भवदीय संजय तिवारी अध्यक्ष छात्रसंघ होलीक्रास हाई स्कूल , भोपाल
+                </p>
+            </div>
+        </div>
+
+
+        <br><br>
+
+        <div class="row">
+            <div class="col col-sm-12 col-md-12 col-lg-12">
+                <strong>
+                    <h5 style="text-align: justify;">शाला शुल्क मुक्ति के लिए आर्थिक कारण बताते हुए अपने प्राचार्य को एक
+                        आवेदन पत्र लिखिए ।</h5>
+                </strong>
+
+                <p style="text-align: justify;"> सेवा में ,<br>
+
+                    श्रीमान् प्राचार्य महोदय , स्वामी शिवदत्त मेमोरियल स्कूल भेड़ाघाट , जबलपुर विषय - शिक्षण शुल्क माफ
+                    करने हेतु आवेदन । महोदय , सविनय निवेदन है कि मैं आपके विद्यालय की कक्षा 12 वीं ( अ ) की एक निर्धन
+                    छात्रा हूँ । मेरे पिताजी के पास एक बहुत छोटी - सी खेती है , जिसकी कुल वार्षिक आय 4000-5000 रुपये है
+                    । मेरे दो भाई - बहिन भी स्थानीय कॉलेज में अध्ययनरत हैं । मेरे घर में केवल पिताजी ही कमाने वाले सदस्य
+                    हैं । उनकी आय से हमारा गुजारा मुश्किल से हो पाता है । अतएव मेरे पिता प्रतिमास शिक्षण शुल्क देने में
+                    असमर्थ हैं मैंने गत वार्षिक परीक्षा अच्छे अंकों से उत्तीर्ण की है । अतएव श्रीमान से प्रार्थना है कि
+                    मेरे आवेदन - पत्र पर सहानुभूतिपूर्वक विचार करते हुए मुझे शिक्षण शुल्क में छुट प्रदान करने की कृपा
+                    करेंगे ताकि मैं आगे पढ़ सकूँ । आपकी अति कृपा होगी । आपका आज्ञाकारी छात्रा सीमा साहू
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Footer Design Starts -->
+
+
+    <footer class="bg-dark" style="color: #fff;">
+        <p>Copyright &copy; Vanshika Ki Pathshala 2020 | All Right Reserved !</p>
+    </footer>
+
+
+
+
+
+
+    <!-- Scroll Css -->
+    <script>
+
+        let progress = document.getElementById('progressBar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
 
 
 

@@ -145,4 +145,34 @@ $(document).ready(function () {
 
 
 
+// Job Less Carousel, atkbd carousel,science & invention carousel and game Carousel
+
+
+$(document).ready(function(){
+    $('#jobcarousel .owl-carousel').owlCarousel({
+        loop:true,
+        margin: 10,
+        dots : false,
+        autoplay : 5000,
+        autoplayTimeout : 2000,
+        animateOut: 'slideOutDown',
+        animateIn: 'zoomInDown',
+        rtl:true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+})
+
+
+
+
 

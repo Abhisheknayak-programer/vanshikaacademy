@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vanshika Ki Pathshala</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.green.css">
+
+    <!-- Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!-- J-query File Path -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Owl Javascript -->
+    <script src="../js/owl.carousel.min.js"></script>
+
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    strong {
+        color: crimson;
+    }
+
+
+
+
+
+
+
+    /* Scroll Bar Css */
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #scrollPath {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    #progressBar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        animation: animationMyScroll 3s linear infinite;
+    }
+
+
+    @keyframes animationMyScroll {
+
+        0%,
+        100% {
+            filter: hue-rotate(0deg);
+        }
+
+        50% {
+            filter: hue-rotate(360deg);
+        }
+    }
+
+
+    #progressBar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(10px);
+    }
+
+
+    #progressBar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #008aff, #00ffe7);
+        filter: blur(30px);
+    }
+</style>
+
+<body>
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+
+
+    <!-- NavBar Area -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Ki Pathshala</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars" class="navbar-toggler-icon" style="color: #fff;" aria-hidden="true"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <!-- 
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="#">Hindi Blogs</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../hindi.html">Hindi</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.ecenglish.com/en/101-ways-to-learn-english">English</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../science.html">Science</a></li>
+                            <li><a class="dropdown-item" href="../commerce1.html">Commerce</a></li>
+                            <li><a class="dropdown-item" href="https://techdaytodays.blogspot.com/">Technology</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: #fff;" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Essay
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../essay holder/jobless.html">Jobless</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/atkbd.html">Criminals</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/game.html">Game</a></li>
+                            <li><a class="dropdown-item" href="../essay holder/newInvention.html">Scientific
+                                    Invention</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="../hindi.html">Ryhme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="../jibanParichya.html">Jivan Parichya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="color: #fff;"
+                            href="../application.html">Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="color: #fff;"
+                            href="../essay.html">Essay</a>
+                    </li>
+
+                </ul>
+
+                <!-- <a class="navbar-brand mx-auto title_main" style="color: #fff;" href="/">Vanshika Ki Pathshala</a> -->
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" style="color: #fff;" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div id="jobcarousel">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Science And Technology/topic-4-img1.jpg"
+                    alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Science And Technology/topic-4-img2.jpg"
+                    alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Science And Technology/topic-4-img3.jpg"
+                    alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Science And Technology/topic-4-img4.jpg"
+                    alt="No_Img"></div>
+            <div class="item"><img src="../images/Hinid Images/Essay Images/Science And Technology/topic-4-img5.jpg"
+                    alt="No_Img"></div>
+        </div>
+    </div>
+
+
+
+    <br>
+    <br>
+
+
+
+
+    <!-- Science Invention Area Starts -->
+
+    <h1 style="text-align: center;">विज्ञान के नये आविष्कार</h1>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-12 col-sm-12 col-md-12 JobParaHolder">
+                <p style="text-align: justify;"><strong> रूपरेखा</strong> <br>
+                    ( 1 ) प्रस्तावना , ( 2 ) विभिन्न क्षेत्रों में विज्ञान का महत्व , ( 3 ) विज्ञान के अभिशाप , ( 4 )
+                    उपसंहार ।
+
+                    <br><br>(1) प्रस्तावना - मानव ने अपनी आवश्यकताओं की पूर्ति के लिए नये नये आविष्कार किये हैं । इस
+                    शताब्दी विज्ञान ने भारी प्रगति की है और संसार का नक्शा ही बदल दिया है । विज्ञान ने हमारी बड़ी से
+                    बड़ी और छोटी से छोटी दैनिक आवश्यकताओं की पूर्ति को है । उसने मानव वन में अधिक आनन्द बढ़ाया है , अंधे
+                    को आँखें , बहरे को कान , पंगु को पर दिये हैं और मनुष्य को पक्षियों के मान आकाश में उड़ने की सुविधा
+                    दी है । मनुष्य जल पर भी चल सकता है । वैज्ञानिक उपकरणों के सहारे आज म सैकड़ो मील दूर बैठे हुए अपने
+                    किसी मित्र से बातचीत कर सकते हैं । 126 / युगबोध परीक्षा बोध मनोरंजन के क्षेत्र में - मनोरंजन को
+                    आधुनिक वस्तुएँ विज्ञान की ही देन हैं । सिनेमा , टेलीविजन , टेपरिकार्ड रेडियो आदि के माध्यम से हम
+                    मनोरंजनार्थ प्रस्तुत की जाने वाली सामग्री देख सुन सकते हैं । हमारी शिक्षा संस्कृति , आचार विचार पर
+                    भी इसका प्रभाव पड़ा है । चिकित्सा के क्षेत्र में स्वास्थ्य और चिकित्सा के क्षेत्र में । विज्ञान ने
+                    मानव को बड़ा लाभ पहुंचाया है । खतरनाक रोगों पर काबू पा लिया है । कई प्रकार टोकों का आविष्कार हो चुका
+                    है । एक्स रे द्वारा तो शरीर का भीतरी भाग तक अच्छी तरह से देखा जा सकता है । शल्य चिकित्सा का भी अच्छा
+                    विकास हुआ है । अब तो विज्ञान मौत को भी जीतने का प्रयास कर रहा है । कृषि के क्षेत्र में कृषि और
+                    उद्योग धन्धों के विकास में भी विज्ञान ने हमारी बड़ी मदद की है । उसने नलकूप , ट्रैक्टर , वैज्ञानिक
+                    खाद आदि ऐसे अनेक उपकरण निर्मित किये हैं जिनके कारण उत्पादन अनेक गुना बढ़ गया है । ट्रैक्टर , सिंचाई
+                    के पम्प , बीज बोने से लेकर काटने और साफ करने तक के यंत्र , रासायनिक उर्वरक कीटनाशक औषधियाँ आदि
+                    विज्ञान के कारण सम्भव हो सकी हैं । आवागमन के क्षेत्र में - आज संसार की दूरी कम हो गयी है । वसुधैव
+                    कुटुम्बकम् की भावना साकार हुई है । आवागमन के द्रुतगामी साधनों के कारण आज मनुष्य दिल्ली में भोजन करता
+                    है , मुम्बई जाकर पानी पीता है और कोलकत्ता जाकर शयन करता है । इंग्लैंड , अमेरिका , रूस आदि देशों की
+                    यात्रा अब स्वप्न नहीं रह गयी है । यात्रा दुत , सुगम , सुखद और सुरक्षित हो गयी है । अन्य क्षेत्रों
+                    में विज्ञान ने मानव जीवन के हर क्षेत्र को प्रभावित किया है । गैस का चूल्हा , विद्युत् चूल्हा ,
+                    रेफ्रीजरेटर , बिजली का पंखा आदि कई वस्तुएँ हमारे दैनिक जीवन के लिए अत्यन्त उपयोगी हैं । कई गणीनों का
+                    चलन हो गया है । 31/42 अन्तरिक्ष में विज्ञान - वैज्ञानिकों ने आर्यभट्ट , भास्कर , रोहिणी , इनसेट के
+                    उपग्रह अन्तार कर अपनी श्रेष्ठता प्रतिपादित कर दी है । मानव चन्द्र और मंगल की यात्रा कर आया अब दूरस्थ
+                    ग्रहों की बारी है । अभिशाप - विज्ञान ने मनुष्य को जहाँ अनेक प्रकार से लाभान्वित किया है , वहीं कई
+                    प्रकार से अहित भी किया है । अनेक लाभकारी आविष्कारों के साथ उसने भयंकर से भयंकर रास्त्रों का निर्माण
+                    किया है । ये अस्त्र - शस्त्र इतने घातक होते हैं कि देखते ही देखते लाखों व्यक्ति को मौत के घाट उतार
+                    सकते हैं । हिरोशिमा और नागासाकी में अणुबम का दुष्परिणाम हम देख ही चुके हैं । अब तो अणु बम से भी अधिक
+                    भयंकर , अधिक विनाशकारी शस्त्रास्त्र बन चुके हैं , जिनका कि अभी हाल ही में हुए युद्ध में ईराक तथा
+                    बहुराष्ट्रीय सेनाओं ने डटकर प्रयोग किया था । इस प्रकार इन अस्त्रों के कारण मानवता के लिए एक जबरदस्त
+                    खतरा पैदा हो गया है । विज्ञान ने बड़ी - बड़ी मशीनों और कारखानों के द्वारा उत्पादन अवश्य बढ़ाया है ,
+                    लेकिन बेरोजगारी , स्पर्धा , शोषण , अस्वास्थ्य आदि की समस्याएँ भी पैदा की हैं । उद्योगों का बड़े
+                    पैमाने पर केन्द्रीयकरण हो गया है , समाज पूँजीपति और श्रमिक वर्ग में बँट गया है । इन्हीं कारखानों ने
+                    बड़े - बड़े देशों में स्पर्धा की भावना पैदा की जिसके परिणामस्वरूप युद्ध होते रहते हैं । उत्पादन
+                    वृद्धि के साथ बेकारी भी बढ़ रही है । भोपाल में दिसम्बर 1984 में यूनियन कार्बाइड कारखाने में गैस
+                    रिसने कारण 2500 से अधिक लोगों को जान से हाथ धोना पड़ा । विज्ञान के कारण समाज में भौतिकवाद और
+                    विलासिता की भावना भी बढ़ी है । आज का मनुष्य भौतिक सुख - सुविधाओं के पीछे पागल है । जितनी सुविधाएँ
+                    बढ़ रही हैं मनुष्य उतना ही विलासी बनता जा रहा है । विलासिता के कारण शक्ति का क्षय होता जा रहा है ।
+                    आज मनुष्य शारीरिक दृष्टि से पहले की अपेक्षा बहुत कमजोर हो गया है । विभिन्न प्रकार के बढ़ते हुए
+                    प्रदूषण ने भी मानव जीवन को बहुत प्रभावित किया है । उपसंहार - विज्ञान की उपलब्धियाँ एक ओर आनन्दकारी
+                    हैं , तो दूसरी ओर विध्वंसकारी भो । आवश्यकता इस बात की है कि हम अपनी प्रवृत्तियों का परिमार्जन करें
+                    और विज्ञान द्वारा प्रदत्त वस्तुओं का उपयोग मानवता को रक्षा , खुशहाली और कल्याण के लिए करें । विज्ञान
+                    विनाश का नहीं सजनका मन जितान
+                    मंत्रालय राजनीतिक दाँव - पेंच से दूर रहे तथा गाँव - गाँव में खेलों के साधन प्रदान करे । छिपे
+                    प्रतिभावान खिलाड़ियों को खोज निकाले तथा उन्हें हर तरह से प्रश्रय प्रदान करे , तो निश्चित ही एक दिन
+                    भारत का मस्तक खेल जगत में भी ऊँचा होकर रहेगा ।
+                </p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Design Starts -->
+
+
+    <!-- <footer class="bg-dark" style="color: #fff;">
+        <p>Copyright &copy; Vanshika Ki Pathshala 2020 | All Right Reserved !</p>
+    </footer> -->
+
+
+
+
+
+    <!-- Scroll Css -->
+    <script>
+
+        let progress = document.getElementById('progressBar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- My Javascripts -->
+    <script src="../js/script.js"></script>
+    <!-- Wow Js  -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
