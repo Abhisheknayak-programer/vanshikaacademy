@@ -119,8 +119,8 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         dots : false,
-        autoplay : 5000,
-        autoplayTimeout : 2000,
+        autoplay : 7000,
+        autoplayTimeout : 3000,
         // // This Is For The Animation Only Occurs For Single Data
         animateOut: 'slideOutDown',
         animateIn: 'zoomInDown',
