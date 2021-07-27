@@ -4,289 +4,288 @@
 <head>
 
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Vanshika Academy</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+  <title>Vanshika Academy</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
 
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../css/owl.theme.green.css">
+  <!-- Owl Stylesheets -->
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="../css/owl.theme.green.css">
 
-    <!-- Cdn Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <!-- Animate Css -->
-    <link rel="stylesheet" href="../css/animate.css">
+  <!-- Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- Animate Css -->
+  <link rel="stylesheet" href="../css/animate.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- J-query File Path -->
-    <script src="../js/jquery.min.js"></script>
-    <!-- Owl Javascript -->
-    <script src="../js/owl.carousel.min.js"></script>
+  <!-- J-query File Path -->
+  <script src="../js/jquery.min.js"></script>
+  <!-- Owl Javascript -->
+  <script src="../js/owl.carousel.min.js"></script>
 
 
 </head>
 <style>
-    body {
-      background: linear-gradient(121deg, #AD00FF 0%, #0C0056 100%), linear-gradient(121deg, #FA00FF 0%, rgba(0, 255, 71, 0) 100%), linear-gradient(127deg, #00F0FF 0%, #A80000 100%), radial-gradient(107% 142% at 15% 104%, #F3D0FC 0%, #1700A4 100%), radial-gradient(100% 100% at 50% 0%, #7300A9 0%, #00FFE0 100%), radial-gradient(100% 100% at 50% 0%, #7300A9 0%, #00FFE0 100%), linear-gradient(127deg, #B7D500 0%, #2200AA 100%);
-      background-blend-mode: overlay, color, overlay, difference, color-dodge, difference, normal;
-      background-repeat: no-repeat;
-        color: white;
-    }
-    
-
-    /* Scroll Bar Css */
-    ::-webkit-scrollbar {
-        width: 0;
-    }
-
-    #scrollPath {
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 10px;
-        background-color: rgba(255, 255, 255, 0.05);
-    }
-
-    #progressBar {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 10px;
-        background: linear-gradient(to top, #008aff, #00ffe7);
-        animation: animationMyScroll 3s linear infinite;
-    }
+  body {
+    background: linear-gradient(121deg, #AD00FF 0%, #0C0056 100%), linear-gradient(121deg, #FA00FF 0%, rgba(0, 255, 71, 0) 100%), linear-gradient(127deg, #00F0FF 0%, #A80000 100%), radial-gradient(107% 142% at 15% 104%, #F3D0FC 0%, #1700A4 100%), radial-gradient(100% 100% at 50% 0%, #7300A9 0%, #00FFE0 100%), radial-gradient(100% 100% at 50% 0%, #7300A9 0%, #00FFE0 100%), linear-gradient(127deg, #B7D500 0%, #2200AA 100%);
+    background-blend-mode: overlay, color, overlay, difference, color-dodge, difference, normal;
+    background-repeat: no-repeat;
+    color: white;
+  }
 
 
-    @keyframes animationMyScroll {
+  /* Scroll Bar Css */
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 
-        0%,
-        100% {
-            filter: hue-rotate(0deg);
-        }
+  #scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
 
-        50% {
-            filter: hue-rotate(360deg);
-        }
+  #progressBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animationMyScroll 3s linear infinite;
+  }
+
+
+  @keyframes animationMyScroll {
+
+    0%,
+    100% {
+      filter: hue-rotate(0deg);
     }
 
-
-    #progressBar::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to top, #008aff, #00ffe7);
-        filter: blur(10px);
+    50% {
+      filter: hue-rotate(360deg);
     }
+  }
 
 
-    #progressBar::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to top, #008aff, #00ffe7);
-        filter: blur(30px);
-    }
+  #progressBar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+  }
 
-    /* Contact us page Styling  */
-    .container__section{
-      min-height: 78vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
 
-    .ContactContainer{
-      padding: 40px 20px;
-    }
+  #progressBar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+  }
 
-    .ContactContainer{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      border-radius: 20px;
-      background: #e0e0e0;
-      box-shadow: inset 13px 13px 14px #c3c3c3,
+  /* Contact us page Styling  */
+  .container__section {
+    min-height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ContactContainer {
+    padding: 40px 20px;
+  }
+
+  .ContactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: inset 13px 13px 14px #c3c3c3,
       inset -13px -13px 14px #fdfdfd;
-    }
+  }
 
-    .container__section form{
-      width: 100% !important;
-    } 
-    
-    .container__section form .form__items{
-      width: 100%;
-    }
-    
-    .container__section form input,form textarea{
-      width: 100%;
-      margin-bottom: 10px;
-      border-radius: 10px;
-      caret-color: blue;
-      outline: none;
-      padding: 7px 5px;
-      border: none;
-    }
+  .container__section form {
+    width: 100% !important;
+  }
 
-    textarea{
-      height: 100px;
+  .container__section form .form__items {
+    width: 100%;
+  }
+
+  .container__section form input,
+  form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    caret-color: blue;
+    outline: none;
+    padding: 7px 5px;
+    border: none;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  .container__section .FormbtnHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width:576px) {
+    .ContactContainer {
+      margin: 0px 20px !important;
     }
-
-    .container__section .FormbtnHolder{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    @media only screen and (max-width:576px){
-      .ContactContainer{
-        margin: 0px 20px !important;
-      }
-    }
-
-
+  }
 </style>
 
 <body>
 
-    <div id="progressBar"></div>
-    <div id="scrollPath"></div>
+  <div id="progressBar"></div>
+  <div id="scrollPath"></div>
 
-    <!-- NavBar Area -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand mx-auto title_main" style="color: #fff" href="/">Vanshika Academy</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars" class="navbar-toggler-icon" style="color: #fff" aria-hidden="true"></i>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fff" href="./blogs/corona.html">Blogs</a>
+  <!-- NavBar Area -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-auto title_main" style="color: #fff" href="/">Vanshika Academy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" class="navbar-toggler-icon" style="color: #fff" aria-hidden="true"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff" href="./blogs/corona.html">Blogs</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: #fff" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./hindi.html">Hindi</a></li>
+              <li>
+                <a class="dropdown-item" href="./english/essay.html">English</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="color: #fff" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Courses
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./hindi.html">Hindi</a></li>
-                  <li>
-                    <a class="dropdown-item" href="./english/essay.html">English</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./science.html">Science</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./commerce1.html">Commerce</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./Updates/civilservices.html">UPSC Updates</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./Updates/examupdate.html">Exam Updates</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./Updates/dailynews.html">Free Courses</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./Updates/studentRoadMap.html">Student RoadMap</a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="https://mybestindia22.blogspot.com/?view=magazine">Blogs On India</a>
-                  </li>
-                </ul>
+              <li>
+                <hr class="dropdown-divider" />
               </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fff" href="./Motivation/Sandipmaheswari.html">Motivation</a>
+              <li>
+                <a class="dropdown-item" href="./science.html">Science</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" style="color: #fff" href="#First_header">About</a>
+              <li>
+                <a class="dropdown-item" href="./commerce1.html">Commerce</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fff" href="#our_service">Services</a>
+              <li>
+                <hr class="dropdown-divider" />
               </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fff" href="./developers.html">Developers</a>
+              <li>
+                <a class="dropdown-item" href="./Updates/civilservices.html">UPSC Updates</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fff" href="./privacyPolicy.html">Privacy Policy</a>
+              <li>
+                <a class="dropdown-item" href="./Updates/examupdate.html">Exam Updates</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fff" href="./termsAndCondition.html">Terms And Condition</a>
+              <li>
+                <a class="dropdown-item" href="./Updates/dailynews.html">Free Courses</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fff" href="./contact.html">Contact Us</a>
+              <li>
+                <a class="dropdown-item" href="./Updates/studentRoadMap.html">Student RoadMap</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="https://mybestindia22.blogspot.com/?view=magazine">Blogs On India</a>
               </li>
             </ul>
-    
-          </div>
-        </div>
-    </nav>
-    
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff" href="./Motivation/Sandipmaheswari.html">Motivation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color: #fff" href="#First_header">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff" href="#our_service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff" href="./developers.html">Developers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff" href="./privacyPolicy.html">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff" href="./termsAndCondition.html">Terms And Condition</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #fff" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
 
-    <!-- Contact Section Design -->
-    <section class="container__section">
-      <div class="container">
-        <div class="row">
-          <div class="col col-sm-10 col-md-8 col-lg-3 mx-auto ContactContainer">
-            <h1 style="color: rgb(0, 89, 255);">Contact Us</h1><br>
-              <form autocomplete="off">
-                <div class="form__items">
-                  <input type="text" placeholder="Enter Your Name">
-                </div>
+      </div>
+    </div>
+  </nav>
 
-                <div class="form__items">
-                  <input type="email" placeholder="Enter Your Email">
-                </div>
 
-                <div class="form__items">
-                  <input type="number" placeholder="Enter Your Number">
-                </div>
+  <!-- Contact Section Design -->
+  <section class="container__section">
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-10 col-md-8 col-lg-3 mx-auto ContactContainer">
+          <h1 style="color: rgb(0, 89, 255);">Contact Us</h1><br>
+          <form autocomplete="off">
+            <div class="form__items">
+              <input type="text" placeholder="Enter Your Name">
+            </div>
 
-                <div class="form__items">
-                  <input type="Subject" placeholder="Enter Your Subject">
-                </div>
+            <div class="form__items">
+              <input type="email" placeholder="Enter Your Email">
+            </div>
 
-                <div class="form__items">
-                    <textarea name="message" placeholder="Message"></textarea>
-                </div>
+            <div class="form__items">
+              <input type="number" placeholder="Enter Your Number">
+            </div>
 
-                <div class="FormbtnHolder">
-                  <button class="btn btn-primary">SUBMIT</button>
-                </div>
-              </form>
-          </div>
+            <div class="form__items">
+              <input type="Subject" placeholder="Enter Your Subject">
+            </div>
+
+            <div class="form__items">
+              <textarea name="message" placeholder="Message"></textarea>
+            </div>
+
+            <div class="FormbtnHolder">
+              <button class="btn btn-primary">SUBMIT</button>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
 
@@ -304,39 +303,39 @@
 
 
 
-    <!-- Footer Design Starts -->
+  <!-- Footer Design Starts -->
 
-    <footer class="bg-dark" style="color: #fff;">
-        <p style="padding: 0px;">Copyright &copy; Vanshika Academy 2021 | All Right Reserved !</p>
-    </footer>
-
-
+  <footer class="bg-dark" style="color: #fff;">
+    <p style="padding: 0px;">Copyright &copy; Vanshika Academy 2021 | All Right Reserved !</p>
+  </footer>
 
 
 
 
-    <!-- My Javascripts -->
-    <script src="../js/script.js"></script>
-
-    <!-- Scroll Css -->
-    <script>
-
-        let progress = document.getElementById('progressBar');
-        let totalHeight = document.body.scrollHeight - window.innerHeight;
-        window.onscroll = function () {
-            let progressHeight = (window.pageYOffset / totalHeight) * 100;
-            progress.style.height = progressHeight + "%";
-        }
-    </script>
 
 
-    <!-- Wow Js  -->
-    <script src="../js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- My Javascripts -->
+  <script src="../js/script.js"></script>
+
+  <!-- Scroll Css -->
+  <script>
+
+    let progress = document.getElementById('progressBar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+  </script>
+
+
+  <!-- Wow Js  -->
+  <script src="../js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
